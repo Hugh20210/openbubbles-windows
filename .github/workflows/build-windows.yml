@@ -1,0 +1,108 @@
+name: Build Windows Portable
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - windows-portable
+
+jobs:
+  build-windows:
+    name: Build Windows x64 (portable)
+    runs-on: windows-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 1
+
+      - name: Set up Rust (stable)
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Install protoc (Protobuf compiler)
+        shell: pwsh
+        run: |
+          choco install protoc -y
+          protoc --version
+
+      - name: Set up Flutter 3.24.0
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: 3.24.0
+          cache: true
+
+      - name: Enable Windows Desktop
+        shell: pwsh
+        run: |
+          flutter config --enable-windows-desktop
+          flutter --version
+
+      - name: Set up fake Fairplay keys
+        shell: pwsh
+        run: |
+          $cert_names = @(
+            "4056631661436364584235346952193",
+            "4056631661436364584235346952194",
+            "4056631661436364584235346952195",
+            "4056631661436364584235346952196",
+            "4056631661436364584235346952197",
+            "4056631661436364584235346952198",
+            "4056631661436364584235346952199",
+            "4056631661436364584235346952200",
+            "4056631661436364584235346952201",
+            "4056631661436364584235346952208"
+          )
+          New-Item -ItemType Directory -Force -Path rustpush/certs/fairplay | Out-Null
+          foreach ($name in $cert_names) {
+            Copy-Item rustpush/certs/legacy-fairplay/fairplay.pem "rustpush/certs/fairplay/$name.pem"
+            Copy-Item rustpush/certs/legacy-fairplay/fairplay.crt "rustpush/certs/fairplay/$name.crt"
+          }
+          Write-Host "Fairplay keys created: $((Get-ChildItem rustpush/certs/fairplay).Count) files"
+
+      - name: Flutter pub get
+        shell: pwsh
+        run: |
+          flutter pub get
+
+      - name: Build Windows Release (portable)
+        shell: pwsh
+        run: |
+          flutter build windows --release
+        env:
+          RUST_BACKTRACE: 1
+
+      - name: Verify build output
+        shell: pwsh
+        run: |
+          $out = "build/windows/x64/runner/Release"
+          if (Test-Path $out) {
+            Write-Host "=== Build output ==="
+            Get-ChildItem $out | Select-Object Name, Length | Format-Table -AutoSize
+            $exe = Get-ChildItem "$out/*.exe" | Select-Object -First 1
+            Write-Host "EXE: $($exe.Name) ($([math]::Round($exe.Length/1MB,1)) MB)"
+          } else {
+            Write-Host "ERROR: Build output not found at $out"
+            exit 1
+          }
+
+      - name: Package portable zip
+        shell: pwsh
+        run: |
+          $out = "build/windows/x64/runner/Release"
+          $zip = "OpenBubbles-Windows-x64-portable.zip"
+          if (Test-Path $zip) { Remove-Item $zip }
+          Compress-Archive -Path "$out/*" -DestinationPath $zip -CompressionLevel Optimal
+          Write-Host "ZIP created: $zip"
+          Get-Item $zip | Select-Object Name, @{N='SizeMB';E={[math]::Round($_.Length/1MB,1)}} | Format-Table -AutoSize
+
+      - name: Upload portable zip artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: OpenBubbles-Windows-x64-portable
+          path: OpenBubbles-Windows-x64-portable.zip
+          if-no-files-found: error
+          retention-days: 30
