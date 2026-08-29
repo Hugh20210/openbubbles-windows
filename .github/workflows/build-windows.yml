@@ -26,8 +26,8 @@ jobs:
         shell: pwsh
         run: |
           choco install strawberryperl nasm -y --no-progress
-          # Set PATH for current step AND all subsequent steps
-          $perlPaths = @("C:\Strawberry\perl\site\bin", "C:\Strawberry\perl\bin", "C:\Strawberry\c\bin")
+          # Only add perl paths, NOT Strawberry's c\bin (gcc) - to avoid MSVC conflict
+          $perlPaths = @("C:\Strawberry\perl\site\bin", "C:\Strawberry\perl\bin")
           $nasmPath = "C:\Program Files\NASM"
           foreach ($p in $perlPaths + $nasmPath) {
             $env:Path = "$p;$env:Path"
@@ -99,10 +99,11 @@ jobs:
       - name: Build Windows Release (portable)
         shell: cmd
         run: |
-          set PATH=C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Strawberry\c\bin;C:\Program Files\NASM;%PATH%
+          set PATH=C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\NASM;%PATH%
           call "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\Tools\VsDevCmd.bat" -arch=amd64
           where perl
           where nasm
+          where cl
           flutter build windows --release
         env:
           RUST_BACKTRACE: 1
