@@ -42,19 +42,21 @@ jobs:
           "OPENSSL_INCLUDE_DIR=$opensslDir\include" | Out-File -FilePath $env:GITHUB_ENV -Append -Encoding utf8
           "OPENSSL_STATIC=1" | Out-File -FilePath $env:GITHUB_ENV -Append -Encoding utf8
 
-      - name: Patch Cargo.toml to remove openssl vendored feature
+      - name: Patch ALL Cargo.toml to remove openssl vendored feature
         shell: pwsh
         run: |
-          $files = @("rustpush\Cargo.toml", "rust\Cargo.toml")
+          $files = @("rustpush\Cargo.toml", "rust\Cargo.toml", "rustpush\keystore\Cargo.toml")
           foreach ($f in $files) {
             if (Test-Path $f) {
               $content = Get-Content $f -Raw
               $content = $content -replace 'openssl = \{ version = "([^"]+)", features = \["vendored"\] \}', 'openssl = { version = "$1" }'
               Set-Content -Path $f -Value $content -NoNewline
               Write-Host "Patched: $f"
-              Select-String -Path $f -Pattern "openssl"
             }
           }
+          # Verify no vendored remains in direct deps
+          Write-Host "=== Verify: remaining openssl lines ==="
+          Select-String -Path $files -Pattern "openssl" | ForEach-Object { Write-Host "  $($_.Path):$($_.LineNumber): $($_.Line)" }
 
       - name: Install protoc (Protobuf compiler)
         shell: pwsh
