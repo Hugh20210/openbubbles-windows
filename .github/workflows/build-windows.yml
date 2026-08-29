@@ -149,6 +149,34 @@ jobs:
             exit 1
           }
 
+      - name: Bundle WebView2 Fixed Version (portable, no install needed)
+        shell: pwsh
+        run: |
+          $out = "build/windows/x64/runner/Release"
+          $webview2Dir = "$out\WebView2"
+          New-Item -ItemType Directory -Force -Path $webview2Dir | Out-Null
+
+          # Download WebView2 Fixed Version x64 from GitHub archive
+          $cabUrl = "https://github.com/seelen-corp/webview2-archive/releases/download/143.0.3650.139/Microsoft.WebView2.FixedVersionRuntime.143.0.3650.139.x64.cab"
+          $cabFile = "$env:TEMP\webview2.cab"
+          Write-Host "Downloading WebView2 Fixed Version 143.0.3650.139 x64..."
+          $ProgressPreference = 'SilentlyContinue'
+          Invoke-WebRequest -Uri $cabUrl -OutFile $cabFile -UseBasicParsing
+          Write-Host "Downloaded: $([math]::Round((Get-Item $cabFile).Length / 1MB, 1)) MB"
+
+          # Extract CAB using Windows expand command
+          $extractDir = "$env:TEMP\webview2_extract"
+          if (Test-Path $extractDir) { Remove-Item $extractDir -Recurse -Force }
+          New-Item -ItemType Directory -Force -Path $extractDir | Out-Null
+          expand -f:* $cabFile $extractDir
+
+          # Find the runtime subfolder and copy all contents
+          $runtimeFolder = Get-ChildItem $extractDir -Directory | Select-Object -First 1
+          Copy-Item -Path "$($runtimeFolder.FullName)\*" -Destination $webview2Dir -Recurse -Force
+          Write-Host "WebView2 bundled at: $webview2Dir"
+          Write-Host "WebView2 files: $((Get-ChildItem $webview2Dir -Recurse -File).Count)"
+          Write-Host "WebView2 size: $([math]::Round((Get-ChildItem $webview2Dir -Recurse | Measure-Object Length -Sum).Sum / 1MB, 1)) MB"
+
       - name: Package portable zip
         shell: pwsh
         run: |
