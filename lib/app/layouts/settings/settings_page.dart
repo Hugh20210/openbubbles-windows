@@ -302,7 +302,7 @@ class _SettingsPageState extends OptimizedState<SettingsPage> {
                                     },
                                     trailing: const NextButton(),
                                     leading: const SettingsLeadingIcon(
-                                      iosIcon: CupertinoIcons.network,
+                                      iosIcon: CupertinoIcons.wifi,
                                       materialIcon: Icons.network_cell_outlined,
                                       containerColor: Colors.blueAccent,
                                     ),
