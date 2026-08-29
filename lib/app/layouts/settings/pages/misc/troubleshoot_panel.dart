@@ -211,7 +211,7 @@ class _TroubleshootPanelState extends OptimizedState<TroubleshootPanel> {
                               "Logs have been exported to your downloads folder. Tap here to share it.",
                               durationMs: 5000,
                               onTap: (snackbar) async {
-                                Share.file("BlueBubbles Logs", newPath);
+                                Share.file("OpenBubbles Logs", newPath);
                               },
                             );
                           } catch (ex, stacktrace) {
@@ -278,7 +278,7 @@ class _TroubleshootPanelState extends OptimizedState<TroubleshootPanel> {
                         onTap: () async {
                           if (optimizationsDisabled.value) {
                             showSnackbar("Already Disabled",
-                                "Battery optimizations are already disabled for BlueBubbles");
+                                "Battery optimizations are already disabled for OpenBubbles");
                             return;
                           }
 

@@ -78,7 +78,7 @@ class Share {
                   backgroundColor: Get.theme.colorScheme.properSurface,
                   title: Text("Location Permission", style: Get.textTheme.titleLarge),
                   content: Text(
-                    "BlueBubbles needs the Location permission to send Locations",
+                    "OpenBubbles needs the Location permission to send Locations",
                     style: Get.textTheme.bodyLarge,
                   ),
                   actions: [

@@ -348,7 +348,7 @@ class _DesktopPanelState extends OptimizedState<DesktopPanel> {
                                             left: size * 0.106,
                                             child: Center(
                                               child: Text(
-                                                "BlueBubbles",
+                                                "OpenBubbles",
                                                 style: context.textTheme.bodyMedium!.copyWith(fontSize: size * 0.0305),
                                                 textAlign: TextAlign.center,
                                               ),
@@ -492,7 +492,7 @@ class _DesktopPanelState extends OptimizedState<DesktopPanel> {
                                             left: size * 0.106,
                                             child: Center(
                                               child: Text(
-                                                "BlueBubbles",
+                                                "OpenBubbles",
                                                 style: context.textTheme.bodyMedium!.copyWith(fontSize: size * 0.0305),
                                                 textAlign: TextAlign.center,
                                               ),

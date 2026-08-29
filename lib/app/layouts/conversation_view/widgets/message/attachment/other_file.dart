@@ -51,7 +51,7 @@ class OtherFile extends StatelessWidget {
             ..setAttribute("download", file.name)
             ..click();
         } else if (kIsDesktop) {
-          File _file = File(join((await getTemporaryDirectory()).path, "BlueBubbles", "attachments", attachment.guid, basename(file.path!)));
+          File _file = File(join((await getTemporaryDirectory()).path, "OpenBubbles", "attachments", attachment.guid, basename(file.path!)));
           if (!_file.existsSync()) {
             _file.createSync(recursive: true);
             File(file.path!).copySync(_file.path);
@@ -69,7 +69,7 @@ class OtherFile extends StatelessWidget {
             } else if (res.type == ResultType.fileNotFound) {
               showSnackbar('Not Found', "File not found at path: ${file.path}");
             } else if (res.type == ResultType.permissionDenied) {
-              showSnackbar('Permission Denied', "BlueBubbles does not have access to this file! Using share menu instead.");
+              showSnackbar('Permission Denied', "OpenBubbles does not have access to this file! Using share menu instead.");
               await Future.delayed(const Duration(seconds: 1));
               Share.file(file.name, file.path!);
             }

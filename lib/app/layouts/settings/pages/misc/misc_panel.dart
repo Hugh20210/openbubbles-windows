@@ -80,7 +80,7 @@ class _MiscPanelState extends OptimizedState<MiscPanel> {
                                         TextSpan(text: "\n\n"),
                                         TextSpan(
                                             text:
-                                                "BlueBubbles will use the fingerprints and pin/password set on your device as authentication. Please note that BlueBubbles does not have access to your authentication information - all biometric checks are handled securely by your operating system. The app is only notified when the unlock is successful."),
+                                                "OpenBubbles will use the fingerprints and pin/password set on your device as authentication. Please note that OpenBubbles does not have access to your authentication information - all biometric checks are handled securely by your operating system. The app is only notified when the unlock is successful."),
                                       ]),
                                       if (!kIsDesktop)
                                         const TextSpan(children: [

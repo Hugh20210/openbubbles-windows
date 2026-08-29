@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(bluebubbles_app LANGUAGES CXX)
+project(openbubbles_app LANGUAGES CXX)
 
-set(BINARY_NAME "bluebubbles_app")
+set(BINARY_NAME "openbubbles_app")
 
 cmake_policy(SET CMP0063 NEW)
 

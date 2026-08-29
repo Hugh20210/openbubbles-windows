@@ -257,7 +257,7 @@ class _AboutPanelState extends OptimizedState<AboutPanel> {
                   backgroundColor: tileColor,
                   children: [
                     SettingsTile(
-                      title: "Changelog (BlueBubbles)",
+                      title: "Changelog (OpenBubbles)",
                       onTap: () async {
                         String changelog =
                             await DefaultAssetBundle.of(context).loadString('assets/changelog/changelog.md');
@@ -327,9 +327,9 @@ class _AboutPanelState extends OptimizedState<AboutPanel> {
                       title: "Developers",
                       onTap: () {
                         final devs = {
-                          "Zach (BlueBubbles)": "zlshames",
-                          "Tanay (BlueBubbles)": "tneotia",
-                          "Joel (BlueBubbles)": "jjoelj",
+                          "Zach (OpenBubbles)": "zlshames",
+                          "Tanay (OpenBubbles)": "tneotia",
+                          "Joel (OpenBubbles)": "jjoelj",
                           "Tae": "TaeHagen",
                         };
                         showDialog(
@@ -579,7 +579,7 @@ class _AboutPanelState extends OptimizedState<AboutPanel> {
                                                       style: context.theme.textTheme.titleLarge,
                                                     ),
                                                     Text(
-                                                          "Based on BlueBubbles (not affiliated)",
+                                                          "Based on OpenBubbles (not affiliated)",
                                                           style: context.theme.textTheme.bodyMedium),
                                                     if (!kIsDesktop)
                                                       Text(
@@ -613,7 +613,7 @@ class _AboutPanelState extends OptimizedState<AboutPanel> {
                                             builder: (BuildContext context) => Theme(
                                               data: context.theme,
                                               child: LicensePage(
-                                                applicationName: "BlueBubbles",
+                                                applicationName: "OpenBubbles",
                                                 applicationVersion: snapshot.hasData ? snapshot.data!.version : "",
                                                 applicationIcon: Image.asset(
                                                   "assets/icon/icon.png",

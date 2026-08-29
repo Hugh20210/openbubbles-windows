@@ -77,10 +77,10 @@ class _UnifiedPushPanelState
                         const TextSpan(text: "nfty.sh", style: TextStyle(fontWeight: FontWeight.bold)),
                         const TextSpan(
                             text:
-                                ", as it is free and easy to setup. They also have an Android App that will integrate directly with BlueBubbles. "),
+                                ", as it is free and easy to setup. They also have an Android App that will integrate directly with OpenBubbles. "),
                         const TextSpan(
                             text:
-                                "Simply install the app, then come back here and enable Unified Push. The integration will automatically create a subscriber for you, which you can use as a Webhook in the BlueBubbles Server."),
+                                "Simply install the app, then come back here and enable Unified Push. The integration will automatically create a subscriber for you, which you can use as a Webhook in the OpenBubbles Server."),
                       ],
                       style: context.theme.textTheme.bodyMedium,
                     ),

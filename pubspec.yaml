@@ -1,5 +1,5 @@
-name: bluebubbles
-description: Send iMessages on Android using BlueBubbles!
+name: openbubbles
+description: Send iMessages on Windows using OpenBubbles!
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -195,7 +195,7 @@ dependencies:
   app_install_date: ^0.1.5
   ffi: ^2.1.0
   flutter_rust_bridge: 2.3.0
-  rust_lib_bluebubbles:
+  rust_lib_openbubbles:
     path: rust_builder
   freezed_annotation: ^2.4.1
   telephony_plus:

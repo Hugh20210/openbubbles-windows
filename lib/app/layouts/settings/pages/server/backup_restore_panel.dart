@@ -463,7 +463,7 @@ class _BackupRestorePanelState extends OptimizedState<BackupRestorePanel> {
                                     if (kIsDesktop) {
                                       launchUrl(Uri.file(dirname(filePath)));
                                     }
-                                    Share.file("BlueBubbles Settings", filePath);
+                                    Share.file("OpenBubbles Settings", filePath);
                                   },
                                   child: Text(kIsDesktop ? "OPEN FOLDER": "SHARE", style: TextStyle(color: context.theme.colorScheme.onSecondary)),
                                 ),
@@ -841,7 +841,7 @@ class _BackupRestorePanelState extends OptimizedState<BackupRestorePanel> {
                               themeData.add(e.toMap());
                             }
                             String jsonStr = jsonEncode(themeData);
-                            String directoryPath = "/storage/emulated/0/Download/BlueBubbles-theming-";
+                            String directoryPath = "/storage/emulated/0/Download/OpenBubbles-theming-";
                             DateTime now = DateTime.now().toLocal();
                             String filePath = "$directoryPath${now.year}${now.month}${now.day}_${now.hour}${now.minute}${now.second}.json";
                             if (kIsWeb) {
@@ -857,7 +857,7 @@ class _BackupRestorePanelState extends OptimizedState<BackupRestorePanel> {
                               String? _filePath = await FilePicker.platform.saveFile(
                                 initialDirectory: (await getDownloadsDirectory())?.path,
                                 dialogTitle: 'Choose a location to save this file',
-                                fileName: "BlueBubbles-theming-${now.year}${now.month}${now.day}_${now
+                                fileName: "OpenBubbles-theming-${now.year}${now.month}${now.day}_${now
                                     .hour}${now.minute}${now.second}.json",
                                 type: FileType.custom,
                                 allowedExtensions: ["json"],
@@ -883,7 +883,7 @@ class _BackupRestorePanelState extends OptimizedState<BackupRestorePanel> {
                                     launchUrl(Uri.file(dirname(filePath)));
                                     return;
                                   }
-                                  Share.file("BlueBubbles Theming", filePath);
+                                  Share.file("OpenBubbles Theming", filePath);
                                 },
                                 child: Text(kIsDesktop ? "OPEN FOLDER" : "SHARE", style: TextStyle(color: context.theme.colorScheme.onSecondary)),
                               ),
@@ -1031,14 +1031,14 @@ class _BackupRestorePanelState extends OptimizedState<BackupRestorePanel> {
                               "messages": msgData,
                               "atts": msgAtts,
                             });
-                            String directoryPath = "/storage/emulated/0/Download/BlueBubbles-chats-";
+                            String directoryPath = "/storage/emulated/0/Download/OpenBubbles-chats-";
                             DateTime now = DateTime.now().toLocal();
                             String filePath = "$directoryPath${now.year}${now.month}${now.day}_${now.hour}${now.minute}${now.second}.json";
                             if (kIsDesktop) {
                               String? _filePath = await FilePicker.platform.saveFile(
                                 initialDirectory: (await getDownloadsDirectory())?.path,
                                 dialogTitle: 'Choose a location to save this file',
-                                fileName: "BlueBubbles-chats-${now.year}${now.month}${now.day}_${now
+                                fileName: "OpenBubbles-chats-${now.year}${now.month}${now.day}_${now
                                     .hour}${now.minute}${now.second}.json",
                                 type: FileType.custom,
                                 allowedExtensions: ["json"],
@@ -1076,7 +1076,7 @@ class _BackupRestorePanelState extends OptimizedState<BackupRestorePanel> {
                                     launchUrl(Uri.file(dirname(filePath)));
                                     return;
                                   }
-                                  Share.file("BlueBubbles Chats", filePath);
+                                  Share.file("OpenBubbles Chats", filePath);
                                 },
                                 child: Text(kIsDesktop ? "OPEN FOLDER" : "SHARE", style: TextStyle(color: context.theme.colorScheme.onSecondary)),
                               ),

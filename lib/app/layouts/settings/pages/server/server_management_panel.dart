@@ -437,7 +437,7 @@ class _ServerManagementPanelState extends CustomState<ServerManagementPanel, voi
                   ) : SizedBox.shrink()),
                   Obx(() => controller.proxyService.value != null && !kIsWeb ? const SettingsDivider(),*/
                   SettingsTile(
-                    title: "Re-configure with BlueBubbles Server",
+                    title: "Re-configure with OpenBubbles Server",
                     subtitle: kIsWeb || kIsDesktop
                         ? "Click for manual entry"
                         : "Tap to scan QR code\nLong press for manual entry",
@@ -775,7 +775,7 @@ class _ServerManagementPanelState extends CustomState<ServerManagementPanel, voi
                               await logFile.writeAsString(response.data['data']);
 
                               try {
-                                Share.file("BlueBubbles Server Log", logFile.absolute.path);
+                                Share.file("OpenBubbles Server Log", logFile.absolute.path);
                                 controller.fetchStatus.value = null;
                               } catch (ex) {
                                 controller.fetchStatus.value = "Failed to share file! ${ex.toString()}";
@@ -895,7 +895,7 @@ class _ServerManagementPanelState extends CustomState<ServerManagementPanel, voi
                           ),
                         )),
                     Obx(() => SettingsTile(
-                        title: "Restart BlueBubbles Server",
+                        title: "Restart OpenBubbles Server",
                         subtitle: (controller.isRestarting.value)
                             ? "Restart in progress..."
                             : "This will briefly disconnect you",
@@ -957,7 +957,7 @@ class _ServerManagementPanelState extends CustomState<ServerManagementPanel, voi
                               SettingsTile(
                                 title: "Check for Server Updates",
                                 subtitle: socket.state.value == SocketState.connected
-                                    ? "Check for new BlueBubbles Server updates"
+                                    ? "Check for new OpenBubbles Server updates"
                                     : "Disconnected, cannot check for updates",
                                 backgroundColor: tileColor,
                                 leading: const SettingsLeadingIcon(
