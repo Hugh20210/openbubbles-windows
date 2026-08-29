@@ -1,7 +1,7 @@
-import 'package:bluebubbles/database/database.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/rustpush/rustpush_service.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/database/database.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/rustpush/rustpush_service.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:dio/dio.dart';
 import 'package:get/get.dart';
 

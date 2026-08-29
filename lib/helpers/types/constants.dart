@@ -1,4 +1,4 @@
-import 'package:bluebubbles/services/backend/settings/settings_service.dart';
+import 'package:openbubbles/services/backend/settings/settings_service.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

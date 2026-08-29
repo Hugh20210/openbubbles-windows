@@ -1,9 +1,9 @@
 import 'package:async_task/async_task_extension.dart';
-import 'package:bluebubbles/utils/logger/logger.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/services/backend/sync/sync_manager_impl.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/utils/logger/logger.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/services/backend/sync/sync_manager_impl.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:dio/dio.dart';
 import 'package:get/get.dart' hide Response;
 import 'package:tuple/tuple.dart';

@@ -1,5 +1,5 @@
-import 'package:bluebubbles/helpers/ui/theme_helpers.dart';
-import 'package:bluebubbles/app/layouts/setup/pages/page_template.dart';
+import 'package:openbubbles/helpers/ui/theme_helpers.dart';
+import 'package:openbubbles/app/layouts/setup/pages/page_template.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shimmer/shimmer.dart';

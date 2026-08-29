@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:bluebubbles/services/services.dart';
-import 'package:bluebubbles/utils/logger/logger.dart';
+import 'package:openbubbles/services/services.dart';
+import 'package:openbubbles/utils/logger/logger.dart';
 
 Future<void> runForegroundService() async {
   try {

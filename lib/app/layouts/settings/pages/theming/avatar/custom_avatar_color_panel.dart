@@ -1,10 +1,10 @@
 import 'dart:async';
 
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/app/layouts/settings/widgets/settings_widgets.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/app/components/avatars/contact_avatar_widget.dart';
-import 'package:bluebubbles/database/models.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/settings_widgets.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/app/components/avatars/contact_avatar_widget.dart';
+import 'package:openbubbles/database/models.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

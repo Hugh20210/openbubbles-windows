@@ -1,8 +1,8 @@
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/app/layouts/conversation_list/widgets/tile/conversation_tile.dart';
-import 'package:bluebubbles/app/layouts/conversation_list/pages/conversation_list.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/app/layouts/conversation_list/widgets/tile/conversation_tile.dart';
+import 'package:openbubbles/app/layouts/conversation_list/pages/conversation_list.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

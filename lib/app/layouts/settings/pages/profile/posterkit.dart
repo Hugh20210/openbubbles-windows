@@ -3,14 +3,14 @@ import 'dart:io';
 import 'dart:math';
 import 'dart:typed_data';
 
-import 'package:bluebubbles/app/layouts/settings/pages/profile/poster_edit.dart';
-import 'package:bluebubbles/services/rustpush/rustpush_service.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/layouts/settings/pages/profile/poster_edit.dart';
+import 'package:openbubbles/services/rustpush/rustpush_service.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:palette_generator/palette_generator.dart';
-import 'package:bluebubbles/src/rust/api/api.dart' as api;
+import 'package:openbubbles/src/rust/api/api.dart' as api;
 import 'dart:ui' as ui;
 import 'package:image/image.dart' as img;
 import 'dart:math' as math;

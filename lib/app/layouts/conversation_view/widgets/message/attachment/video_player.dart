@@ -1,13 +1,13 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/message/reply/reply_bubble.dart';
-import 'package:bluebubbles/app/layouts/fullscreen_media/fullscreen_holder.dart';
-import 'package:bluebubbles/app/wrappers/theme_switcher.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/message/reply/reply_bubble.dart';
+import 'package:openbubbles/app/layouts/fullscreen_media/fullscreen_holder.dart';
+import 'package:openbubbles/app/wrappers/theme_switcher.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';

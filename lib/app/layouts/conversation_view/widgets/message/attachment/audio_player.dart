@@ -1,10 +1,10 @@
 import 'package:audio_waveforms/audio_waveforms.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/helpers/helpers.dart';
 // it does actually export (Web only)
 // ignore: undefined_hidden_name
-import 'package:bluebubbles/database/models.dart' hide PlayerState;
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/database/models.dart' hide PlayerState;
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';

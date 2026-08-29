@@ -1,7 +1,7 @@
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:crop_your_image/crop_your_image.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';

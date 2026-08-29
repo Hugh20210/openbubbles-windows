@@ -1,4 +1,4 @@
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/services/services.dart';
 
 class FCMData {
   int? id;

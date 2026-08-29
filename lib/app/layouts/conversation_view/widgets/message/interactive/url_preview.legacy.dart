@@ -1,10 +1,10 @@
 import 'dart:ui';
 
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/message/reply/reply_bubble.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/utils/logger/logger.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/database/models.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/message/reply/reply_bubble.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/utils/logger/logger.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/models.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:metadata_fetch/metadata_fetch.dart';

@@ -1,6 +1,6 @@
-import 'package:bluebubbles/helpers/ui/theme_helpers.dart';
-import 'package:bluebubbles/database/html/objectbox.dart';
-import 'package:bluebubbles/database/html/theme_object.dart';
+import 'package:openbubbles/helpers/ui/theme_helpers.dart';
+import 'package:openbubbles/database/html/objectbox.dart';
+import 'package:openbubbles/database/html/theme_object.dart';
 import 'package:flutter/material.dart';
 
 class ThemeEntry {

@@ -1,8 +1,8 @@
 import 'dart:core';
 
-import 'package:bluebubbles/database/database.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/database/database.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 // (needed when generating objectbox model code)

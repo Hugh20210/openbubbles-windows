@@ -1,5 +1,5 @@
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/helpers/helpers.dart';
 import 'package:dio/dio.dart';
 
 Message handleSendError(dynamic error, Message m) {

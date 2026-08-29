@@ -1,17 +1,17 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
-import 'package:bluebubbles/app/layouts/settings/pages/passwords/credential_detail_panel.dart';
-import 'package:bluebubbles/app/layouts/settings/pages/passwords/group_editor_panel.dart';
-import 'package:bluebubbles/app/layouts/settings/pages/passwords/password_editor_panel.dart';
-import 'package:bluebubbles/app/layouts/settings/pages/passwords/password_models.dart';
-import 'package:bluebubbles/app/layouts/settings/pages/passwords/passwords_widgets.dart';
-import 'package:bluebubbles/app/layouts/settings/widgets/content/next_button.dart';
-import 'package:bluebubbles/app/layouts/settings/widgets/settings_widgets.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/services/services.dart';
-import 'package:bluebubbles/src/rust/api/api.dart' as api;
-import 'package:bluebubbles/src/rust/lib.dart' as lib;
+import 'package:openbubbles/app/layouts/settings/pages/passwords/credential_detail_panel.dart';
+import 'package:openbubbles/app/layouts/settings/pages/passwords/group_editor_panel.dart';
+import 'package:openbubbles/app/layouts/settings/pages/passwords/password_editor_panel.dart';
+import 'package:openbubbles/app/layouts/settings/pages/passwords/password_models.dart';
+import 'package:openbubbles/app/layouts/settings/pages/passwords/passwords_widgets.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/content/next_button.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/settings_widgets.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/services/services.dart';
+import 'package:openbubbles/src/rust/api/api.dart' as api;
+import 'package:openbubbles/src/rust/lib.dart' as lib;
 import 'package:cbor/simple.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

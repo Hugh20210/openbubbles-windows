@@ -1,6 +1,6 @@
 import 'dart:math';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/material.dart';
 
 class ReactionPickerClipper extends CustomClipper<Path>{

@@ -1,5 +1,5 @@
-import 'package:bluebubbles/helpers/types/constants.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/helpers/types/constants.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

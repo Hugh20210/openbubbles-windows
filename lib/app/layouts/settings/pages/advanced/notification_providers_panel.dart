@@ -1,13 +1,13 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:bluebubbles/app/layouts/settings/pages/advanced/firebase_panel.dart';
-import 'package:bluebubbles/app/layouts/settings/pages/advanced/unified_push.dart';
-import 'package:bluebubbles/app/layouts/settings/widgets/content/next_button.dart';
-import 'package:bluebubbles/app/layouts/settings/widgets/settings_widgets.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/helpers/types/constants.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/layouts/settings/pages/advanced/firebase_panel.dart';
+import 'package:openbubbles/app/layouts/settings/pages/advanced/unified_push.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/content/next_button.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/settings_widgets.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/helpers/types/constants.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

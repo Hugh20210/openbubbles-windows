@@ -1,10 +1,10 @@
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'package:bluebubbles/services/network/backend_service.dart';
+import 'package:openbubbles/services/network/backend_service.dart';
 
 void showChangeName(Chat chat, String method, BuildContext context) {
   final controller = TextEditingController(text: chat.displayName);

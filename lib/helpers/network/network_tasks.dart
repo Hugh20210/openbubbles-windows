@@ -2,17 +2,17 @@ import 'dart:async';
 import 'dart:io';
 import 'dart:ui';
 
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/services/network/backend_service.dart';
-import 'package:bluebubbles/services/services.dart';
-import 'package:bluebubbles/utils/logger/logger.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/services/network/backend_service.dart';
+import 'package:openbubbles/services/services.dart';
+import 'package:openbubbles/utils/logger/logger.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart' hide Response;
 import 'package:network_info_plus/network_info_plus.dart';
 import 'package:network_tools/network_tools.dart'
-    if (dart.library.html) 'package:bluebubbles/models/html/network_tools.dart';
+    if (dart.library.html) 'package:openbubbles/models/html/network_tools.dart';
 
 class NetworkTasks {
   static Future<void> onConnect() async {

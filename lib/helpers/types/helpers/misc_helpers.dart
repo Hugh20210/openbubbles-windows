@@ -1,6 +1,6 @@
 import 'package:async_task/async_task.dart';
-import 'package:bluebubbles/helpers/types/constants.dart';
-import 'package:bluebubbles/utils/logger/task_logger.dart';
+import 'package:openbubbles/helpers/types/constants.dart';
+import 'package:openbubbles/utils/logger/task_logger.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

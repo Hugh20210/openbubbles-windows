@@ -2,8 +2,8 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:archive/archive_io.dart';
-import 'package:bluebubbles/services/services.dart';
-import 'package:bluebubbles/utils/logger/outputs/log_stream_output.dart';
+import 'package:openbubbles/services/services.dart';
+import 'package:openbubbles/utils/logger/outputs/log_stream_output.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import 'package:logger/logger.dart';

@@ -1,6 +1,6 @@
 /*
-import 'package:bluebubbles/utils/parsers/event_payload/api_payload.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/utils/parsers/event_payload/api_payload.dart';
+import 'package:openbubbles/services/services.dart';
 
 class ApiPayloadParser {
 

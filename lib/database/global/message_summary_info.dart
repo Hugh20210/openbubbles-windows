@@ -1,4 +1,4 @@
-import 'package:bluebubbles/database/global/attributed_body.dart';
+import 'package:openbubbles/database/global/attributed_body.dart';
 
 class MessageSummaryInfo {
   MessageSummaryInfo({

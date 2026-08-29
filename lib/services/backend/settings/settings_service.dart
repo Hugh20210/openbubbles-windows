@@ -1,17 +1,17 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:bluebubbles/app/layouts/settings/pages/advanced/private_api_panel.dart';
-import 'package:bluebubbles/app/layouts/settings/settings_page.dart';
-import 'package:bluebubbles/app/wrappers/scrollbar_wrapper.dart';
-import 'package:bluebubbles/app/wrappers/theme_switcher.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/main.dart';
-import 'package:bluebubbles/services/network/backend_service.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/layouts/settings/pages/advanced/private_api_panel.dart';
+import 'package:openbubbles/app/layouts/settings/settings_page.dart';
+import 'package:openbubbles/app/wrappers/scrollbar_wrapper.dart';
+import 'package:openbubbles/app/wrappers/theme_switcher.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/main.dart';
+import 'package:openbubbles/services/network/backend_service.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/foundation.dart';
-import 'package:bluebubbles/services/network/backend_service.dart';
+import 'package:openbubbles/services/network/backend_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_displaymode/flutter_displaymode.dart';

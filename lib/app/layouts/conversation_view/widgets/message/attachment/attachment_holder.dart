@@ -1,25 +1,25 @@
 import 'dart:math';
 
 import 'package:animations/animations.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/message/attachment/audio_player.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/message/attachment/contact_card.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/message/attachment/image_viewer.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/message/attachment/other_file.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/message/attachment/video_player.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/message/interactive/url_preview.dart';
-import 'package:bluebubbles/app/layouts/fullscreen_media/fullscreen_holder.dart';
-import 'package:bluebubbles/app/components/circle_progress_bar.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/helpers/ui/attributed_body_helpers.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/message/attachment/audio_player.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/message/attachment/contact_card.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/message/attachment/image_viewer.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/message/attachment/other_file.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/message/attachment/video_player.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/message/interactive/url_preview.dart';
+import 'package:openbubbles/app/layouts/fullscreen_media/fullscreen_holder.dart';
+import 'package:openbubbles/app/components/circle_progress_bar.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/helpers/ui/attributed_body_helpers.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:tuple/tuple.dart';
-import 'package:bluebubbles/services/network/backend_service.dart';
+import 'package:openbubbles/services/network/backend_service.dart';
 
 class AttachmentHolder extends CustomStateful<MessageWidgetController> {
   AttachmentHolder({

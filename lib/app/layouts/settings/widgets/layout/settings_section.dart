@@ -1,6 +1,6 @@
-import 'package:bluebubbles/helpers/types/constants.dart';
-import 'package:bluebubbles/helpers/ui/theme_helpers.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/helpers/types/constants.dart';
+import 'package:openbubbles/helpers/ui/theme_helpers.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/material.dart';
 
 class SettingsSection extends StatelessWidget {

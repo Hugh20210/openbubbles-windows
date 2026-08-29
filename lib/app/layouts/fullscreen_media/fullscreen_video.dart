@@ -1,10 +1,10 @@
 import 'dart:async';
 
-import 'package:bluebubbles/app/layouts/fullscreen_media/dialogs/metadata_dialog.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/layouts/fullscreen_media/dialogs/metadata_dialog.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
 
 // (needed for custom back button)
 //ignore: implementation_imports

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:bluebubbles/services/network/proxy_config.dart';
+import 'package:openbubbles/services/network/proxy_config.dart';
 
 /// Proxy settings dialog.
 /// Allows configuring HTTP/HTTPS proxy with optional authentication.

@@ -1,16 +1,16 @@
 import 'dart:convert';
 import 'dart:math';
 
-import 'package:bluebubbles/app/components/avatars/contact_avatar_widget.dart';
-import 'package:bluebubbles/app/components/custom_text_editing_controllers.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/dialogs/custom_mention_dialog.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/message/interactive/supported_interactive.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/text_field/picked_attachment.dart';
-import 'package:bluebubbles/app/wrappers/theme_switcher.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/components/avatars/contact_avatar_widget.dart';
+import 'package:openbubbles/app/components/custom_text_editing_controllers.dart';
+import 'package:openbubbles/app/layouts/conversation_view/dialogs/custom_mention_dialog.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/message/interactive/supported_interactive.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/text_field/picked_attachment.dart';
+import 'package:openbubbles/app/wrappers/theme_switcher.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

@@ -1,17 +1,17 @@
-import 'package:bluebubbles/app/layouts/settings/pages/misc/logging_panel.dart';
-import 'package:bluebubbles/app/layouts/settings/widgets/content/log_level_selector.dart';
-import 'package:bluebubbles/app/layouts/settings/widgets/content/next_button.dart';
-import 'package:bluebubbles/helpers/backend/settings_helpers.dart';
-import 'package:bluebubbles/main.dart';
-import 'package:bluebubbles/services/backend/sync/chat_sync_manager.dart';
-import 'package:bluebubbles/services/rustpush/rustpush_service.dart';
-import 'package:bluebubbles/utils/logger/logger.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/services/network/backend_service.dart';
-import 'package:bluebubbles/app/layouts/settings/widgets/settings_widgets.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/services/services.dart';
-import 'package:bluebubbles/utils/share.dart';
+import 'package:openbubbles/app/layouts/settings/pages/misc/logging_panel.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/content/log_level_selector.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/content/next_button.dart';
+import 'package:openbubbles/helpers/backend/settings_helpers.dart';
+import 'package:openbubbles/main.dart';
+import 'package:openbubbles/services/backend/sync/chat_sync_manager.dart';
+import 'package:openbubbles/services/rustpush/rustpush_service.dart';
+import 'package:openbubbles/utils/logger/logger.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/services/network/backend_service.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/settings_widgets.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/services/services.dart';
+import 'package:openbubbles/utils/share.dart';
 import 'package:disable_battery_optimization/disable_battery_optimization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
@@ -20,7 +20,7 @@ import 'package:get/get.dart';
 import 'package:path/path.dart';
 import 'package:universal_io/io.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:bluebubbles/src/rust/api/api.dart' as api;
+import 'package:openbubbles/src/rust/api/api.dart' as api;
 
 
 

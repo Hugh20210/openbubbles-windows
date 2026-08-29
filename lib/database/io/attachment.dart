@@ -1,11 +1,11 @@
 import 'dart:convert';
 
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/database/database.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/network/backend_service.dart';
-import 'package:bluebubbles/services/rustpush/rustpush_service.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/database.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/network/backend_service.dart';
+import 'package:openbubbles/services/rustpush/rustpush_service.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/foundation.dart';
 import 'package:mime_type/mime_type.dart';
@@ -15,7 +15,7 @@ import 'package:objectbox/objectbox.dart';
 import 'package:path/path.dart';
 import 'package:universal_io/io.dart';
 import 'package:telephony_plus/src/models/attachment.dart' as TelephonyAttachment;
-import 'package:bluebubbles/src/rust/api/api.dart' as api;
+import 'package:openbubbles/src/rust/api/api.dart' as api;
 import 'package:crypto/crypto.dart';
 import 'package:convert/convert.dart';
 

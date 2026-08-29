@@ -1,7 +1,7 @@
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/database/html/contact.dart';
-import 'package:bluebubbles/database/html/objectbox.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/html/contact.dart';
+import 'package:openbubbles/database/html/objectbox.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:faker/faker.dart';
 import 'package:get/get.dart';
 import 'package:tuple/tuple.dart';

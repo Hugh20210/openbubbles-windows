@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'dart:core';
 
-import 'package:bluebubbles/helpers/ui/theme_helpers.dart';
-import 'package:bluebubbles/database/database.dart';
-import 'package:bluebubbles/objectbox.g.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/helpers/ui/theme_helpers.dart';
+import 'package:openbubbles/database/database.dart';
+import 'package:openbubbles/objectbox.g.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';

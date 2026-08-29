@@ -1,4 +1,4 @@
-import 'package:bluebubbles/database/models.dart';
+import 'package:openbubbles/database/models.dart';
 
 class ChatMessages {
   final Map<String, Message> _messages = {};

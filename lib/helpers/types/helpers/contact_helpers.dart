@@ -1,5 +1,5 @@
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/database/models.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/models.dart';
 import 'package:dlibphonenumber/dlibphonenumber.dart';
 import 'package:get/get.dart';
 

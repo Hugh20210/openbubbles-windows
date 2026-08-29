@@ -1,6 +1,6 @@
-import 'package:bluebubbles/database/database.dart';
-import 'package:bluebubbles/objectbox.g.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/database/database.dart';
+import 'package:openbubbles/objectbox.g.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/foundation.dart';
 import 'package:objectbox/objectbox.dart';
 

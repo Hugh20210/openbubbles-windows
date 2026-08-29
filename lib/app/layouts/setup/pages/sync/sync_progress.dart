@@ -1,16 +1,16 @@
 import 'dart:math';
 
-import 'package:bluebubbles/app/layouts/settings/pages/server/backup_restore_panel.dart';
-import 'package:bluebubbles/app/layouts/settings/settings_page.dart';
-import 'package:bluebubbles/app/wrappers/theme_switcher.dart';
-import 'package:bluebubbles/helpers/ui/theme_helpers.dart';
-import 'package:bluebubbles/utils/logger/logger.dart';
-import 'package:bluebubbles/app/layouts/conversation_list/pages/conversation_list.dart';
-import 'package:bluebubbles/app/layouts/setup/dialogs/failed_to_scan_dialog.dart';
-import 'package:bluebubbles/app/layouts/setup/pages/page_template.dart';
-import 'package:bluebubbles/app/layouts/setup/setup_view.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/layouts/settings/pages/server/backup_restore_panel.dart';
+import 'package:openbubbles/app/layouts/settings/settings_page.dart';
+import 'package:openbubbles/app/wrappers/theme_switcher.dart';
+import 'package:openbubbles/helpers/ui/theme_helpers.dart';
+import 'package:openbubbles/utils/logger/logger.dart';
+import 'package:openbubbles/app/layouts/conversation_list/pages/conversation_list.dart';
+import 'package:openbubbles/app/layouts/setup/dialogs/failed_to_scan_dialog.dart';
+import 'package:openbubbles/app/layouts/setup/pages/page_template.dart';
+import 'package:openbubbles/app/layouts/setup/setup_view.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

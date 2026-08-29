@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_acrylic/flutter_acrylic.dart';
 import 'package:tuple/tuple.dart';

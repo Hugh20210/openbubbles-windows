@@ -2,12 +2,12 @@ import 'dart:io';
 import 'dart:math';
 
 import 'package:adaptive_theme/adaptive_theme.dart';
-import 'package:bluebubbles/app/layouts/settings/widgets/content/next_button.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/app/layouts/settings/widgets/settings_widgets.dart';
-import 'package:bluebubbles/app/wrappers/theme_switcher.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/content/next_button.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/settings_widgets.dart';
+import 'package:openbubbles/app/wrappers/theme_switcher.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';

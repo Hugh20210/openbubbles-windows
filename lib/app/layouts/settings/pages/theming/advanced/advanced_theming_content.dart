@@ -1,15 +1,15 @@
 import 'dart:async';
 
 import 'package:animated_size_and_fade/animated_size_and_fade.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/app/layouts/settings/dialogs/create_new_theme_dialog.dart';
-import 'package:bluebubbles/app/layouts/settings/widgets/content/advanced_theming_tile.dart';
-import 'package:bluebubbles/app/layouts/settings/widgets/settings_widgets.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/app/wrappers/theme_switcher.dart';
-import 'package:bluebubbles/app/wrappers/scrollbar_wrapper.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/app/layouts/settings/dialogs/create_new_theme_dialog.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/content/advanced_theming_tile.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/settings_widgets.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/app/wrappers/theme_switcher.dart';
+import 'package:openbubbles/app/wrappers/scrollbar_wrapper.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

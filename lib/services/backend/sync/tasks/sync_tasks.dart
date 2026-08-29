@@ -1,11 +1,11 @@
 import 'dart:async';
 
 import 'package:async_task/async_task.dart';
-import 'package:bluebubbles/helpers/types/helpers/message_helper.dart';
-import 'package:bluebubbles/helpers/backend/sync/sync_helpers.dart';
-import 'package:bluebubbles/database/database.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/utils/logger/logger.dart';
+import 'package:openbubbles/helpers/types/helpers/message_helper.dart';
+import 'package:openbubbles/helpers/backend/sync/sync_helpers.dart';
+import 'package:openbubbles/database/database.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/utils/logger/logger.dart';
 import 'package:collection/collection.dart';
 
 class BulkSyncChats extends AsyncTask<List<dynamic>, List<Chat>> {

@@ -2,16 +2,16 @@
 
 import 'dart:convert';
 
-import 'package:bluebubbles/database/database.dart';
-import 'package:bluebubbles/helpers/types/constants.dart';
-import 'package:bluebubbles/main.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/network/backend_service.dart';
-import 'package:bluebubbles/services/services.dart';
-import 'package:bluebubbles/utils/logger/logger.dart';
+import 'package:openbubbles/database/database.dart';
+import 'package:openbubbles/helpers/types/constants.dart';
+import 'package:openbubbles/main.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/network/backend_service.dart';
+import 'package:openbubbles/services/services.dart';
+import 'package:openbubbles/utils/logger/logger.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:bluebubbles/helpers/types/constants.dart' as constants;
+import 'package:openbubbles/helpers/types/constants.dart' as constants;
 
 
 class App {

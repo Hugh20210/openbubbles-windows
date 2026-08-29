@@ -1,18 +1,18 @@
 import 'dart:math';
 import 'dart:ui';
 
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/message/message_holder.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/pages/conversation_view.dart';
-import 'package:bluebubbles/app/wrappers/theme_switcher.dart';
-import 'package:bluebubbles/app/wrappers/titlebar_wrapper.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/message/message_holder.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/app/layouts/conversation_view/pages/conversation_view.dart';
+import 'package:openbubbles/app/wrappers/theme_switcher.dart';
+import 'package:openbubbles/app/wrappers/titlebar_wrapper.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:defer_pointer/defer_pointer.dart';
 import 'package:flutter/cupertino.dart' as cupertino;
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:bluebubbles/database/models.dart';
+import 'package:openbubbles/database/models.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 

@@ -1,4 +1,4 @@
-import 'package:bluebubbles/app/layouts/settings/pages/passwords/password_models.dart';
+import 'package:openbubbles/app/layouts/settings/pages/passwords/password_models.dart';
 import 'package:flutter/material.dart';
 
 class CredentialAvatar extends StatelessWidget {

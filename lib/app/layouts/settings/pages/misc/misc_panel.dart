@@ -1,8 +1,8 @@
-import 'package:bluebubbles/helpers/types/classes/language_codes.dart';
-import 'package:bluebubbles/services/services.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/app/layouts/settings/widgets/settings_widgets.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/helpers/types/classes/language_codes.dart';
+import 'package:openbubbles/services/services.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/settings_widgets.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
@@ -12,7 +12,7 @@ import 'package:get/get.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:secure_application/secure_application.dart';
 import 'package:universal_io/io.dart';
-import 'package:bluebubbles/services/network/backend_service.dart';
+import 'package:openbubbles/services/network/backend_service.dart';
 
 class MiscPanel extends StatefulWidget {
   @override

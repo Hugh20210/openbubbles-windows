@@ -1,8 +1,8 @@
 import 'dart:math';
 
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/services/services.dart';
-import 'package:bluebubbles/utils/window_effects.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/services/services.dart';
+import 'package:openbubbles/utils/window_effects.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_acrylic/flutter_acrylic.dart';
 import 'package:get/get.dart';

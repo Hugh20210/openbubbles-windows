@@ -1,9 +1,9 @@
 import 'dart:io';
 
 import 'package:bitsdojo_window/bitsdojo_window.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/header/header_widgets.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/header/header_widgets.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:get/get_utils/src/extensions/context_extensions.dart';

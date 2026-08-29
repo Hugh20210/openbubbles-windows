@@ -1,10 +1,10 @@
 import 'dart:ui';
 
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/message/message_holder.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/database/database.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/message/message_holder.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/database.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:collection/collection.dart';
 import 'package:defer_pointer/defer_pointer.dart';
 import 'package:flutter/foundation.dart';

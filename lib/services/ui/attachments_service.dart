@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'dart:isolate';
 
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/utils/logger/logger.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/utils/logger/logger.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:exif/exif.dart';
 import 'package:file_picker/file_picker.dart' hide PlatformFile;

@@ -1,4 +1,4 @@
-import 'package:bluebubbles/helpers/helpers.dart';
+import 'package:openbubbles/helpers/helpers.dart';
 import 'package:universal_io/io.dart';
 
 bool hasBadCert = false;

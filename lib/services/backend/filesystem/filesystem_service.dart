@@ -1,7 +1,7 @@
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/database/database.dart' as db;
-import 'package:bluebubbles/services/ui/contact_service.dart';
-import 'package:bluebubbles/utils/logger/logger.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/database.dart' as db;
+import 'package:openbubbles/services/ui/contact_service.dart';
+import 'package:openbubbles/utils/logger/logger.dart';
 import 'package:collection/collection.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/foundation.dart';

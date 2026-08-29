@@ -1,14 +1,14 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/database/html/attachment.dart';
-import 'package:bluebubbles/database/html/chat.dart';
-import 'package:bluebubbles/database/html/handle.dart';
-import 'package:bluebubbles/database/html/objectbox.dart';
-import 'package:bluebubbles/database/models.dart' show AttributedBody, MessageSummaryInfo, PayloadData;
-import 'package:bluebubbles/services/services.dart';
-import 'package:bluebubbles/utils/logger/logger.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/html/attachment.dart';
+import 'package:openbubbles/database/html/chat.dart';
+import 'package:openbubbles/database/html/handle.dart';
+import 'package:openbubbles/database/html/objectbox.dart';
+import 'package:openbubbles/database/models.dart' show AttributedBody, MessageSummaryInfo, PayloadData;
+import 'package:openbubbles/services/services.dart';
+import 'package:openbubbles/utils/logger/logger.dart';
 import 'package:collection/collection.dart';
 import 'package:get/get.dart';
 import 'package:metadata_fetch/metadata_fetch.dart';

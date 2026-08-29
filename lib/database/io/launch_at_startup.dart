@@ -1,4 +1,4 @@
-import 'package:bluebubbles/helpers/types/helpers/misc_helpers.dart';
+import 'package:openbubbles/helpers/types/helpers/misc_helpers.dart';
 import 'package:launch_at_startup/launch_at_startup.dart' as las;
 import 'package:universal_io/io.dart';
 

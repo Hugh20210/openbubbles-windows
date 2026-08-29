@@ -1,7 +1,7 @@
-import 'package:bluebubbles/app/components/custom/custom_bouncing_scroll_physics.dart';
-import 'package:bluebubbles/app/components/custom_text_editing_controllers.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/components/custom/custom_bouncing_scroll_physics.dart';
+import 'package:openbubbles/app/components/custom_text_editing_controllers.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

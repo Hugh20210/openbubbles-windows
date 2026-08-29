@@ -1,16 +1,16 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:bluebubbles/app/layouts/settings/dialogs/custom_headers_dialog.dart';
-import 'package:bluebubbles/app/layouts/setup/dialogs/failed_to_scan_dialog.dart';
-import 'package:bluebubbles/app/layouts/setup/pages/page_template.dart';
-import 'package:bluebubbles/app/layouts/setup/pages/sync/qr_code_scanner.dart';
-import 'package:bluebubbles/app/layouts/setup/setup_view.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/helpers/backend/settings_helpers.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/layouts/settings/dialogs/custom_headers_dialog.dart';
+import 'package:openbubbles/app/layouts/setup/dialogs/failed_to_scan_dialog.dart';
+import 'package:openbubbles/app/layouts/setup/pages/page_template.dart';
+import 'package:openbubbles/app/layouts/setup/pages/sync/qr_code_scanner.dart';
+import 'package:openbubbles/app/layouts/setup/setup_view.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/helpers/backend/settings_helpers.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:dio/dio.dart' as dio;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';

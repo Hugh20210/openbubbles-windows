@@ -1,19 +1,19 @@
-import 'package:bluebubbles/app/layouts/conversation_details/dialogs/address_picker.dart';
-import 'package:bluebubbles/services/rustpush/rustpush_service.dart';
-import 'package:bluebubbles/utils/logger/logger.dart';
-import 'package:bluebubbles/app/components/avatars/contact_avatar_widget.dart';
-import 'package:bluebubbles/database/models.dart';
+import 'package:openbubbles/app/layouts/conversation_details/dialogs/address_picker.dart';
+import 'package:openbubbles/services/rustpush/rustpush_service.dart';
+import 'package:openbubbles/utils/logger/logger.dart';
+import 'package:openbubbles/app/components/avatars/contact_avatar_widget.dart';
+import 'package:openbubbles/database/models.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart' hide Response;
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:universal_io/io.dart';
-import 'package:bluebubbles/services/network/backend_service.dart';
+import 'package:openbubbles/services/network/backend_service.dart';
 
 class ContactTile extends StatelessWidget {
   final Handle handle;

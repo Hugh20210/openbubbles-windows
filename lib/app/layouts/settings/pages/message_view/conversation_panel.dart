@@ -1,22 +1,22 @@
 import 'package:animated_size_and_fade/animated_size_and_fade.dart';
 import 'package:audio_waveforms/audio_waveforms.dart' as aw;
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/message/reaction/reaction.dart';
-import 'package:bluebubbles/app/layouts/settings/pages/message_view/message_options_order_panel.dart';
-import 'package:bluebubbles/app/layouts/settings/widgets/content/next_button.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/app/layouts/settings/widgets/settings_widgets.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/database/models.dart' hide PlatformFile;
-import 'package:bluebubbles/services/network/backend_service.dart';
-import 'package:bluebubbles/services/rustpush/rustpush_service.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/message/reaction/reaction.dart';
+import 'package:openbubbles/app/layouts/settings/pages/message_view/message_options_order_panel.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/content/next_button.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/settings_widgets.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/database/models.dart' hide PlatformFile;
+import 'package:openbubbles/services/network/backend_service.dart';
+import 'package:openbubbles/services/rustpush/rustpush_service.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart' hide Response;
 import 'package:path/path.dart';
-import 'package:bluebubbles/src/rust/api/api.dart' as api;
+import 'package:openbubbles/src/rust/api/api.dart' as api;
 import 'package:universal_io/io.dart';
 
 class ConversationPanel extends StatefulWidget {

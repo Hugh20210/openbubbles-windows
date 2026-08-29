@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:bluebubbles/helpers/helpers.dart';
+import 'package:openbubbles/helpers/helpers.dart';
 
 const _chars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890';
 

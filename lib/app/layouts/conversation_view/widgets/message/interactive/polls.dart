@@ -1,21 +1,21 @@
 import 'dart:convert';
 
-import 'package:bluebubbles/app/animations/balloon_rendering.dart';
-import 'package:bluebubbles/app/components/avatars/contact_avatar_group_widget.dart';
-import 'package:bluebubbles/app/components/custom_text_editing_controllers.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/effects/send_effect_picker.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/backend/queue/incoming_queue.dart';
-import 'package:bluebubbles/services/network/backend_service.dart';
-import 'package:bluebubbles/services/rustpush/rustpush_service.dart';
-import 'package:bluebubbles/services/ui/message/message_widget_controller.dart';
-import 'package:bluebubbles/utils/logger/logger.dart';
+import 'package:openbubbles/app/animations/balloon_rendering.dart';
+import 'package:openbubbles/app/components/avatars/contact_avatar_group_widget.dart';
+import 'package:openbubbles/app/components/custom_text_editing_controllers.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/effects/send_effect_picker.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/backend/queue/incoming_queue.dart';
+import 'package:openbubbles/services/network/backend_service.dart';
+import 'package:openbubbles/services/rustpush/rustpush_service.dart';
+import 'package:openbubbles/services/ui/message/message_widget_controller.dart';
+import 'package:openbubbles/utils/logger/logger.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:bluebubbles/helpers/types/constants.dart' as constants;
-import 'package:bluebubbles/helpers/ui/theme_helpers.dart';
+import 'package:openbubbles/helpers/types/constants.dart' as constants;
+import 'package:openbubbles/helpers/ui/theme_helpers.dart';
 import 'package:collection/collection.dart';
 
 PollMessage pollMessageFromJson(String str) => PollMessage.fromJson(json.decode(str));

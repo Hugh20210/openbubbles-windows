@@ -1,5 +1,5 @@
-import 'package:bluebubbles/app/animations/celebration_class.dart';
-import 'package:bluebubbles/app/animations/fireworks_rendering.dart';
+import 'package:openbubbles/app/animations/celebration_class.dart';
+import 'package:openbubbles/app/animations/fireworks_rendering.dart';
 import 'package:flutter/material.dart';
 
 class Celebration extends LeafRenderObjectWidget {

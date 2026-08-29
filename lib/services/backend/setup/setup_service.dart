@@ -1,6 +1,6 @@
-import 'package:bluebubbles/helpers/backend/startup_tasks.dart';
-import 'package:bluebubbles/helpers/network/network_tasks.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/helpers/backend/startup_tasks.dart';
+import 'package:openbubbles/helpers/network/network_tasks.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:get/get.dart';
 
 SetupService setup = Get.isRegistered<SetupService>() ? Get.find<SetupService>() : Get.put(SetupService());

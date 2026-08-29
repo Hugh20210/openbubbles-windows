@@ -1,11 +1,11 @@
 import 'dart:math';
 import 'dart:ui';
 
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/message/misc/tail_clipper.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/message/misc/tail_clipper.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:particles_flutter/particles_engine.dart';

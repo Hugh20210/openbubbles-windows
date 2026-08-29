@@ -1,17 +1,17 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:bluebubbles/app/layouts/conversation_details/dialogs/timeframe_picker.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/message/interactive/polls.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/database/global/payload_data.dart';
-import 'package:bluebubbles/services/rustpush/rustpush_service.dart';
-import 'package:bluebubbles/utils/share.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/media_picker/attachment_picker_file.dart';
-import 'package:bluebubbles/app/wrappers/theme_switcher.dart';
-import 'package:bluebubbles/database/global/platform_file.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/layouts/conversation_details/dialogs/timeframe_picker.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/message/interactive/polls.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/database/global/payload_data.dart';
+import 'package:openbubbles/services/rustpush/rustpush_service.dart';
+import 'package:openbubbles/utils/share.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/media_picker/attachment_picker_file.dart';
+import 'package:openbubbles/app/wrappers/theme_switcher.dart';
+import 'package:openbubbles/database/global/platform_file.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:chunked_stream/chunked_stream.dart';
 import 'package:file_picker/file_picker.dart' hide PlatformFile;
 import 'package:file_picker/file_picker.dart' as pf;
@@ -26,7 +26,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:photo_manager/photo_manager.dart';
 import 'package:collection/collection.dart';
-import 'package:bluebubbles/helpers/types/constants.dart' as constants;
+import 'package:openbubbles/helpers/types/constants.dart' as constants;
 
 class AttachmentPicker extends StatefulWidget {
   AttachmentPicker({

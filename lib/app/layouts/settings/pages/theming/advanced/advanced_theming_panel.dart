@@ -1,12 +1,12 @@
 import 'dart:async';
 
-import 'package:bluebubbles/helpers/ui/theme_helpers.dart';
-import 'package:bluebubbles/helpers/ui/ui_helpers.dart';
-import 'package:bluebubbles/app/layouts/settings/dialogs/old_themes_dialog.dart';
-import 'package:bluebubbles/app/layouts/settings/pages/theming/advanced/advanced_theming_content.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/helpers/ui/theme_helpers.dart';
+import 'package:openbubbles/helpers/ui/ui_helpers.dart';
+import 'package:openbubbles/app/layouts/settings/dialogs/old_themes_dialog.dart';
+import 'package:openbubbles/app/layouts/settings/pages/theming/advanced/advanced_theming_content.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

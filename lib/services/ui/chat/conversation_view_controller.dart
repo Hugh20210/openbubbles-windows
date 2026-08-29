@@ -2,12 +2,12 @@ import 'dart:async';
 import 'dart:isolate';
 
 import 'package:audio_waveforms/audio_waveforms.dart';
-import 'package:bluebubbles/app/components/custom_text_editing_controllers.dart';
-import 'package:bluebubbles/app/layouts/settings/pages/profile/posterkit.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/network/backend_service.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/components/custom_text_editing_controllers.dart';
+import 'package:openbubbles/app/layouts/settings/pages/profile/posterkit.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/network/backend_service.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:emojis/emoji.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +18,7 @@ import 'package:metadata_fetch/metadata_fetch.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:tuple/tuple.dart';
 import 'package:universal_io/io.dart';
-import 'package:bluebubbles/src/rust/api/api.dart' as api;
+import 'package:openbubbles/src/rust/api/api.dart' as api;
 import 'dart:ui' as ui;
 
 ConversationViewController cvc(Chat chat, {String? tag}) => Get.isRegistered<ConversationViewController>(tag: tag ?? chat.guid)

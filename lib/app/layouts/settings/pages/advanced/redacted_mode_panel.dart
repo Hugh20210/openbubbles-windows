@@ -1,15 +1,15 @@
 import 'dart:math';
 
 import 'package:animated_size_and_fade/animated_size_and_fade.dart';
-import 'package:bluebubbles/app/components/avatars/contact_avatar_widget.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/message/attachment/image_viewer.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/message/misc/message_sender.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/message/misc/tail_clipper.dart';
-import 'package:bluebubbles/app/layouts/settings/widgets/settings_widgets.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/components/avatars/contact_avatar_widget.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/message/attachment/image_viewer.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/message/misc/message_sender.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/message/misc/tail_clipper.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/settings_widgets.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

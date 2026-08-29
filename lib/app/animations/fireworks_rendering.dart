@@ -1,4 +1,4 @@
-import 'package:bluebubbles/app/animations/fireworks_classes.dart';
+import 'package:openbubbles/app/animations/fireworks_classes.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 

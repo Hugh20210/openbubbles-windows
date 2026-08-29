@@ -1,13 +1,13 @@
 import 'dart:async';
 
-import 'package:bluebubbles/app/layouts/settings/dialogs/custom_headers_dialog.dart';
-import 'package:bluebubbles/app/layouts/setup/pages/page_template.dart';
-import 'package:bluebubbles/app/layouts/setup/setup_view.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/src/rust/api/api.dart' as api;
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/services/rustpush/rustpush_service.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/layouts/settings/dialogs/custom_headers_dialog.dart';
+import 'package:openbubbles/app/layouts/setup/pages/page_template.dart';
+import 'package:openbubbles/app/layouts/setup/setup_view.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/src/rust/api/api.dart' as api;
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/services/rustpush/rustpush_service.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

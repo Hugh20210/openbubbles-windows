@@ -1,14 +1,14 @@
 
 import 'package:audio_waveforms/audio_waveforms.dart';
-import 'package:bluebubbles/app/components/custom_text_editing_controllers.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/effects/send_effect_picker.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/message/attachment/audio_player.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/text_field/send_button.dart';
-import 'package:bluebubbles/app/wrappers/cupertino_icon_wrapper.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/components/custom_text_editing_controllers.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/effects/send_effect_picker.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/message/attachment/audio_player.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/text_field/send_button.dart';
+import 'package:openbubbles/app/wrappers/cupertino_icon_wrapper.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';

@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/material.dart';
 
 class ReplyLineDecoration extends Decoration {

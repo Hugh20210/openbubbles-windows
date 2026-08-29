@@ -1,7 +1,7 @@
 import 'dart:core';
 
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/material.dart';
 
 @Deprecated('Use ThemeStruct instead.')

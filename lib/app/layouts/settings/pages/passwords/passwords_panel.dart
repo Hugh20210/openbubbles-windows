@@ -1,19 +1,19 @@
-import 'package:bluebubbles/app/layouts/settings/pages/passwords/group_credentials_panel.dart';
-import 'package:bluebubbles/app/layouts/settings/pages/passwords/credential_detail_panel.dart';
-import 'package:bluebubbles/app/layouts/settings/pages/passwords/password_models.dart';
-import 'package:bluebubbles/app/layouts/settings/pages/passwords/passwords_group_panel.dart';
-import 'package:bluebubbles/app/layouts/settings/widgets/content/next_button.dart';
-import 'package:bluebubbles/app/layouts/settings/widgets/settings_widgets.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/helpers/ui/ui_helpers.dart';
-import 'package:bluebubbles/services/rustpush/rustpush_service.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/layouts/settings/pages/passwords/group_credentials_panel.dart';
+import 'package:openbubbles/app/layouts/settings/pages/passwords/credential_detail_panel.dart';
+import 'package:openbubbles/app/layouts/settings/pages/passwords/password_models.dart';
+import 'package:openbubbles/app/layouts/settings/pages/passwords/passwords_group_panel.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/content/next_button.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/settings_widgets.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/helpers/ui/ui_helpers.dart';
+import 'package:openbubbles/services/rustpush/rustpush_service.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:universal_io/io.dart';
-import 'package:bluebubbles/src/rust/api/api.dart' as api;
-import 'package:bluebubbles/src/rust/lib.dart' as lib;
+import 'package:openbubbles/src/rust/api/api.dart' as api;
+import 'package:openbubbles/src/rust/lib.dart' as lib;
 import 'package:get/get.dart';
 
 class PasswordsPanel extends StatefulWidget {

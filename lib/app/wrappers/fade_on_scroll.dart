@@ -1,4 +1,4 @@
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
 import 'package:flutter/material.dart';
 
 class FadeOnScroll extends StatefulWidget {

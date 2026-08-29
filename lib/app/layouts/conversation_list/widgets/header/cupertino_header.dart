@@ -1,11 +1,11 @@
 import 'dart:ui';
 
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/app/layouts/conversation_list/pages/conversation_list.dart';
-import 'package:bluebubbles/app/layouts/conversation_list/widgets/header/header_widgets.dart';
-import 'package:bluebubbles/app/layouts/conversation_list/pages/search/search_view.dart';
-import 'package:bluebubbles/app/wrappers/fade_on_scroll.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/app/layouts/conversation_list/pages/conversation_list.dart';
+import 'package:openbubbles/app/layouts/conversation_list/widgets/header/header_widgets.dart';
+import 'package:openbubbles/app/layouts/conversation_list/pages/search/search_view.dart';
+import 'package:openbubbles/app/wrappers/fade_on_scroll.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';

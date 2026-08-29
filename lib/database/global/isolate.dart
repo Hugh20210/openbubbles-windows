@@ -1,6 +1,6 @@
 import 'dart:isolate';
 
-import 'package:bluebubbles/database/models.dart';
+import 'package:openbubbles/database/models.dart';
 import 'package:flutter/foundation.dart';
 import 'package:image/image.dart';
 import 'package:universal_io/io.dart';

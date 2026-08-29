@@ -1,20 +1,20 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:bluebubbles/app/layouts/conversation_details/dialogs/add_participant.dart';
-import 'package:bluebubbles/app/layouts/conversation_details/widgets/chat_info.dart';
-import 'package:bluebubbles/app/layouts/conversation_details/widgets/chat_options.dart';
-import 'package:bluebubbles/app/layouts/conversation_view/widgets/message/interactive/url_preview.dart';
-import 'package:bluebubbles/app/layouts/settings/pages/profile/profile_scaffold.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/app/layouts/conversation_details/widgets/media_gallery_card.dart';
-import 'package:bluebubbles/app/layouts/conversation_details/widgets/contact_tile.dart';
-import 'package:bluebubbles/app/layouts/settings/widgets/settings_widgets.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/database/database.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/rustpush/rustpush_service.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/layouts/conversation_details/dialogs/add_participant.dart';
+import 'package:openbubbles/app/layouts/conversation_details/widgets/chat_info.dart';
+import 'package:openbubbles/app/layouts/conversation_details/widgets/chat_options.dart';
+import 'package:openbubbles/app/layouts/conversation_view/widgets/message/interactive/url_preview.dart';
+import 'package:openbubbles/app/layouts/settings/pages/profile/profile_scaffold.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/app/layouts/conversation_details/widgets/media_gallery_card.dart';
+import 'package:openbubbles/app/layouts/conversation_details/widgets/contact_tile.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/settings_widgets.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/database/database.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/rustpush/rustpush_service.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
@@ -24,8 +24,8 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:bluebubbles/services/network/backend_service.dart';
-import 'package:bluebubbles/src/rust/api/api.dart' as api;
+import 'package:openbubbles/services/network/backend_service.dart';
+import 'package:openbubbles/src/rust/api/api.dart' as api;
 
 class ConversationDetails extends StatefulWidget {
   final Chat chat;

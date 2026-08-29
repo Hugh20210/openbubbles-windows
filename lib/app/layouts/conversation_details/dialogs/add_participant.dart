@@ -1,12 +1,12 @@
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
-import 'package:bluebubbles/utils/string_utils.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
+import 'package:openbubbles/utils/string_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:slugify/slugify.dart';
 import 'package:tuple/tuple.dart';
-import 'package:bluebubbles/services/network/backend_service.dart';
+import 'package:openbubbles/services/network/backend_service.dart';
 
 void showAddParticipant(BuildContext context, Chat chat) {
   final TextEditingController participantController = TextEditingController();

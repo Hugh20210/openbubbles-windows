@@ -1,5 +1,5 @@
 import 'package:async_task/async_task.dart';
-import 'package:bluebubbles/utils/logger/logger.dart';
+import 'package:openbubbles/utils/logger/logger.dart';
 
 AsyncTaskLogger asyncTaskLogger = (String type, dynamic message, [dynamic error, dynamic stackTrace]) {
   if (type == 'ERROR') {

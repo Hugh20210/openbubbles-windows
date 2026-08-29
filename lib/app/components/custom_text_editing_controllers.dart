@@ -1,12 +1,12 @@
 import "dart:convert";
 import "dart:math";
 
-import "package:bluebubbles/app/layouts/conversation_view/dialogs/custom_mention_dialog.dart";
-import "package:bluebubbles/helpers/helpers.dart";
-import "package:bluebubbles/database/models.dart";
-import "package:bluebubbles/services/services.dart";
-import 'package:bluebubbles/utils/emoji.dart';
-import "package:bluebubbles/utils/emoticons.dart";
+import "package:openbubbles/app/layouts/conversation_view/dialogs/custom_mention_dialog.dart";
+import "package:openbubbles/helpers/helpers.dart";
+import "package:openbubbles/database/models.dart";
+import "package:openbubbles/services/services.dart";
+import 'package:openbubbles/utils/emoji.dart';
+import "package:openbubbles/utils/emoticons.dart";
 import "package:collection/collection.dart";
 import "package:emojis/emoji.dart";
 import "package:flutter/foundation.dart";
@@ -18,7 +18,7 @@ import 'package:languagetool_textfield/languagetool_textfield.dart';
 import "package:languagetool_textfield/utils/closed_range.dart";
 import "package:languagetool_textfield/utils/keep_latest_response_service.dart";
 import 'package:tuple/tuple.dart';
-import 'package:bluebubbles/utils/logger/logger.dart';
+import 'package:openbubbles/utils/logger/logger.dart';
 
 class Mentionable {
   Mentionable({required this.handle});

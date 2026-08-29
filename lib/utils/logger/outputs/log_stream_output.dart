@@ -1,7 +1,7 @@
 import 'package:logger/logger.dart';
 
 // ignore: library_prefixes
-import 'package:bluebubbles/utils/logger/logger.dart' as OpenBubblesLogger;
+import 'package:openbubbles/utils/logger/logger.dart' as OpenBubblesLogger;
 
 
 class LogStreamOutput extends LogOutput {

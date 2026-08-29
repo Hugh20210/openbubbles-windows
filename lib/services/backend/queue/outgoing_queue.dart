@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
-import 'package:bluebubbles/utils/logger/logger.dart';
-import 'package:bluebubbles/services/backend/queue/queue_impl.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
+import 'package:openbubbles/utils/logger/logger.dart';
+import 'package:openbubbles/services/backend/queue/queue_impl.dart';
 import 'package:get/get.dart';
 
 OutgoingQueue outq = Get.isRegistered<OutgoingQueue>() ? Get.find<OutgoingQueue>() : Get.put(OutgoingQueue());

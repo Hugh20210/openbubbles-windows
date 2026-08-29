@@ -1,14 +1,14 @@
 import 'dart:async';
 import 'dart:isolate';
 
-import 'package:bluebubbles/helpers/backend/startup_tasks.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/main.dart';
-import 'package:bluebubbles/services/network/http_overrides.dart';
-import 'package:bluebubbles/utils/logger/logger.dart';
-import 'package:bluebubbles/services/services.dart';
-import 'package:bluebubbles/services/network/backend_service.dart';
+import 'package:openbubbles/helpers/backend/startup_tasks.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/main.dart';
+import 'package:openbubbles/services/network/http_overrides.dart';
+import 'package:openbubbles/utils/logger/logger.dart';
+import 'package:openbubbles/services/services.dart';
+import 'package:openbubbles/services/network/backend_service.dart';
 import 'package:collection/collection.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';

@@ -1,6 +1,6 @@
 import 'dart:math' as math;
 
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
 import 'package:flutter/widgets.dart';
 
 /// Draws a circular animated progress bar.

@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
-import 'package:bluebubbles/src/rust/api/api.dart' as api;
-import 'package:bluebubbles/helpers/types/helpers/date_helpers.dart';
+import 'package:openbubbles/src/rust/api/api.dart' as api;
+import 'package:openbubbles/helpers/types/helpers/date_helpers.dart';
 import 'package:flutter/material.dart';
 import 'package:cbor/simple.dart';
 

@@ -1,7 +1,7 @@
 
 import 'dart:math';
 
-import 'package:bluebubbles/app/animations/spotlight_classes.dart';
+import 'package:openbubbles/app/animations/spotlight_classes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 

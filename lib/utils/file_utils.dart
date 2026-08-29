@@ -1,4 +1,4 @@
-import 'package:bluebubbles/database/global/platform_file.dart';
+import 'package:openbubbles/database/global/platform_file.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/foundation.dart';
 import 'package:path/path.dart';

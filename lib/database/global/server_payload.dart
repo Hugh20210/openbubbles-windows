@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:bluebubbles/services/backend/settings/settings_service.dart';
-import 'package:bluebubbles/utils/crypto_utils.dart';
+import 'package:openbubbles/services/backend/settings/settings_service.dart';
+import 'package:openbubbles/utils/crypto_utils.dart';
 import 'package:collection/collection.dart';
 
 enum PayloadEncoding {

@@ -1,7 +1,7 @@
-import 'package:bluebubbles/helpers/ui/theme_helpers.dart';
-import 'package:bluebubbles/app/layouts/setup/pages/page_template.dart';
-import 'package:bluebubbles/main.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/helpers/ui/theme_helpers.dart';
+import 'package:openbubbles/app/layouts/setup/pages/page_template.dart';
+import 'package:openbubbles/main.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:permission_handler/permission_handler.dart';

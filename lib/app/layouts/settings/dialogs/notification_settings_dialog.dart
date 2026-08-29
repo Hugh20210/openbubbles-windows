@@ -1,6 +1,6 @@
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/services/backend_ui_interop/event_dispatcher.dart';
-import 'package:bluebubbles/database/models.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/services/backend_ui_interop/event_dispatcher.dart';
+import 'package:openbubbles/database/models.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

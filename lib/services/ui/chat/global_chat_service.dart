@@ -1,6 +1,6 @@
-import 'package:bluebubbles/database/database.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/utils/logger/logger.dart';
+import 'package:openbubbles/database/database.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/utils/logger/logger.dart';
 import 'package:get/get.dart';
 
 // ignore: library_private_types_in_public_api, non_constant_identifier_names

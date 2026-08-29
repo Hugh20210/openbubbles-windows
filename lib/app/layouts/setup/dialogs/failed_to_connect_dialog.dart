@@ -1,4 +1,4 @@
-import 'package:bluebubbles/helpers/ui/theme_helpers.dart';
+import 'package:openbubbles/helpers/ui/theme_helpers.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

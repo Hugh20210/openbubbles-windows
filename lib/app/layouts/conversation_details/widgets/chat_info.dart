@@ -1,25 +1,25 @@
 import 'dart:convert';
 import 'dart:ui';
 
-import 'package:bluebubbles/app/layouts/conversation_details/dialogs/address_picker.dart';
-import 'package:bluebubbles/app/layouts/conversation_details/dialogs/change_name.dart';
-import 'package:bluebubbles/app/layouts/conversation_details/widgets/contact_tile.dart';
-import 'package:bluebubbles/app/layouts/settings/pages/theming/avatar/avatar_crop.dart';
-import 'package:bluebubbles/app/wrappers/theme_switcher.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/app/components/avatars/contact_avatar_group_widget.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/services.dart';
-import 'package:bluebubbles/services/network/backend_service.dart';
-import 'package:bluebubbles/services/rustpush/rustpush_service.dart';
+import 'package:openbubbles/app/layouts/conversation_details/dialogs/address_picker.dart';
+import 'package:openbubbles/app/layouts/conversation_details/dialogs/change_name.dart';
+import 'package:openbubbles/app/layouts/conversation_details/widgets/contact_tile.dart';
+import 'package:openbubbles/app/layouts/settings/pages/theming/avatar/avatar_crop.dart';
+import 'package:openbubbles/app/wrappers/theme_switcher.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/app/components/avatars/contact_avatar_group_widget.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/services.dart';
+import 'package:openbubbles/services/network/backend_service.dart';
+import 'package:openbubbles/services/rustpush/rustpush_service.dart';
 import 'package:defer_pointer/defer_pointer.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:universal_io/io.dart';
-import 'package:bluebubbles/src/rust/api/api.dart' as api;
+import 'package:openbubbles/src/rust/api/api.dart' as api;
 
 class ChatInfo extends StatefulWidget {
   const ChatInfo({super.key, required this.chat, required this.ftSupportedParticipants});

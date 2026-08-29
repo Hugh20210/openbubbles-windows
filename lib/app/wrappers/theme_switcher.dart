@@ -1,8 +1,8 @@
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/helpers/types/constants.dart';
-import 'package:bluebubbles/app/components/custom/custom_cupertino_page_transition.dart';
-import 'package:bluebubbles/app/components/custom/custom_bouncing_scroll_physics.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/helpers/types/constants.dart';
+import 'package:openbubbles/app/components/custom/custom_cupertino_page_transition.dart';
+import 'package:openbubbles/app/components/custom/custom_bouncing_scroll_physics.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

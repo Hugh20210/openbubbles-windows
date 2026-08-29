@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/database/html/message.dart';
-import 'package:bluebubbles/database/html/objectbox.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/html/message.dart';
+import 'package:openbubbles/database/html/objectbox.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:mime_type/mime_type.dart';
 
 class Attachment {

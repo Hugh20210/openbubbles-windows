@@ -1,6 +1,6 @@
-import 'package:bluebubbles/app/layouts/setup/setup_view.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/app/wrappers/titlebar_wrapper.dart';
+import 'package:openbubbles/app/layouts/setup/setup_view.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/app/wrappers/titlebar_wrapper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

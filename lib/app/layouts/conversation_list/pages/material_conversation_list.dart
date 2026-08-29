@@ -1,17 +1,17 @@
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/app/layouts/conversation_list/pages/conversation_list.dart';
-import 'package:bluebubbles/app/layouts/conversation_list/widgets/conversation_list_fab.dart';
-import 'package:bluebubbles/app/layouts/conversation_list/widgets/header/material_header.dart';
-import 'package:bluebubbles/app/layouts/conversation_list/widgets/tile/list_item.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/app/wrappers/scrollbar_wrapper.dart';
-import 'package:bluebubbles/app/wrappers/theme_switcher.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/app/layouts/conversation_list/pages/conversation_list.dart';
+import 'package:openbubbles/app/layouts/conversation_list/widgets/conversation_list_fab.dart';
+import 'package:openbubbles/app/layouts/conversation_list/widgets/header/material_header.dart';
+import 'package:openbubbles/app/layouts/conversation_list/widgets/tile/list_item.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/app/wrappers/scrollbar_wrapper.dart';
+import 'package:openbubbles/app/wrappers/theme_switcher.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_acrylic/flutter_acrylic.dart';
 import 'package:get/get.dart';
-import 'package:bluebubbles/database/models.dart';
+import 'package:openbubbles/database/models.dart';
 
 class MaterialConversationList extends StatefulWidget {
   const MaterialConversationList({Key? key, required this.parentController});

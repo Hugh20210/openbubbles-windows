@@ -1,4 +1,4 @@
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:get/get.dart';
 
 UnifiedPushPanelRefresh upr = Get.isRegistered<UnifiedPushPanelRefresh>()

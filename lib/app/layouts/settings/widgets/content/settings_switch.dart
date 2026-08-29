@@ -1,5 +1,5 @@
-import 'package:bluebubbles/app/layouts/settings/widgets/content/settings_leading_icon.dart';
-import 'package:bluebubbles/helpers/ui/theme_helpers.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/content/settings_leading_icon.dart';
+import 'package:openbubbles/helpers/ui/theme_helpers.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

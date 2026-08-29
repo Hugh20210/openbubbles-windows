@@ -1,5 +1,5 @@
-import 'package:bluebubbles/helpers/ui/theme_helpers.dart';
-import 'package:bluebubbles/app/animations/love_classes.dart';
+import 'package:openbubbles/helpers/ui/theme_helpers.dart';
+import 'package:openbubbles/app/animations/love_classes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 

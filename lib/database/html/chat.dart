@@ -1,15 +1,15 @@
 import 'dart:async';
 
-import 'package:bluebubbles/services/network/backend_service.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/database/html/attachment.dart';
-import 'package:bluebubbles/database/html/handle.dart';
-import 'package:bluebubbles/database/html/message.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/services/network/backend_service.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/html/attachment.dart';
+import 'package:openbubbles/database/html/handle.dart';
+import 'package:openbubbles/database/html/message.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
-import 'package:bluebubbles/services/network/backend_service.dart';
+import 'package:openbubbles/services/network/backend_service.dart';
 
 String getFullChatTitle(Chat _chat) {
   String? title = "";

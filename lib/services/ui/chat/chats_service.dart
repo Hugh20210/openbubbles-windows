@@ -2,22 +2,22 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:app_links/app_links.dart';
-import 'package:bluebubbles/app/layouts/chat_creator/chat_creator.dart';
-import 'package:bluebubbles/helpers/backend/startup_tasks.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/database/models.dart';
-import 'package:bluebubbles/services/rustpush/rustpush_service.dart';
-import 'package:bluebubbles/services/services.dart';
-import 'package:bluebubbles/services/network/backend_service.dart';
-import 'package:bluebubbles/utils/logger/logger.dart';
+import 'package:openbubbles/app/layouts/chat_creator/chat_creator.dart';
+import 'package:openbubbles/helpers/backend/startup_tasks.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/database/models.dart';
+import 'package:openbubbles/services/rustpush/rustpush_service.dart';
+import 'package:openbubbles/services/services.dart';
+import 'package:openbubbles/services/network/backend_service.dart';
+import 'package:openbubbles/utils/logger/logger.dart';
 import 'package:collection/collection.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart' hide Response;
 import 'package:tuple/tuple.dart';
 import 'package:universal_io/io.dart';
-import 'package:bluebubbles/database/database.dart';
-import 'package:bluebubbles/src/rust/api/api.dart' as api;
+import 'package:openbubbles/database/database.dart';
+import 'package:openbubbles/src/rust/api/api.dart' as api;
 
 ChatsService chats = Get.isRegistered<ChatsService>() ? Get.find<ChatsService>() : Get.put(ChatsService());
 

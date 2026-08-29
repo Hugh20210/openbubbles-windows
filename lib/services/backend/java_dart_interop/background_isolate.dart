@@ -1,8 +1,8 @@
 import 'dart:ui';
 
-import 'package:bluebubbles/helpers/backend/startup_tasks.dart';
-import 'package:bluebubbles/services/network/http_overrides.dart';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/helpers/backend/startup_tasks.dart';
+import 'package:openbubbles/services/network/http_overrides.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:flutter/material.dart';
 import 'package:universal_io/io.dart';
 

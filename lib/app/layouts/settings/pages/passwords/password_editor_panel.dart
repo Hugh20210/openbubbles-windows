@@ -1,14 +1,14 @@
 import 'dart:convert';
 import 'dart:math';
 
-import 'package:bluebubbles/app/layouts/settings/pages/passwords/password_models.dart';
-import 'package:bluebubbles/app/layouts/setup/pages/sync/qr_code_scanner.dart';
-import 'package:bluebubbles/app/layouts/settings/widgets/settings_widgets.dart';
-import 'package:bluebubbles/app/wrappers/stateful_boilerplate.dart';
-import 'package:bluebubbles/helpers/helpers.dart';
-import 'package:bluebubbles/src/rust/api/api.dart' as api;
-import 'package:bluebubbles/src/rust/lib.dart' as lib;
-import 'package:bluebubbles/utils/logger/logger.dart';
+import 'package:openbubbles/app/layouts/settings/pages/passwords/password_models.dart';
+import 'package:openbubbles/app/layouts/setup/pages/sync/qr_code_scanner.dart';
+import 'package:openbubbles/app/layouts/settings/widgets/settings_widgets.dart';
+import 'package:openbubbles/app/wrappers/stateful_boilerplate.dart';
+import 'package:openbubbles/helpers/helpers.dart';
+import 'package:openbubbles/src/rust/api/api.dart' as api;
+import 'package:openbubbles/src/rust/lib.dart' as lib;
+import 'package:openbubbles/utils/logger/logger.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

@@ -1,13 +1,13 @@
 import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
-import 'package:bluebubbles/services/services.dart';
+import 'package:openbubbles/services/services.dart';
 import 'package:dio/dio.dart';
 import 'package:xml/xml.dart';
 import 'package:dio/io.dart';
 import 'package:flutter_contacts/flutter_contacts.dart';
-import 'package:bluebubbles/database/io/contact.dart' as contacts;
-import 'package:bluebubbles/database/global/structured_name.dart' as structured;
+import 'package:openbubbles/database/io/contact.dart' as contacts;
+import 'package:openbubbles/database/global/structured_name.dart' as structured;
 
 // 690 lines of beautiful AI slop. It works great!
 
