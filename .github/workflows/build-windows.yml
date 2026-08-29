@@ -26,13 +26,15 @@ jobs:
         shell: pwsh
         run: |
           choco install strawberryperl nasm -y --no-progress
-          # Make perl and nasm available to ALL subsequent steps
-          "C:\Strawberry\perl\site\bin" | Out-File -FilePath $env:GITHUB_PATH -Append -Encoding utf8
-          "C:\Strawberry\perl\bin" | Out-File -FilePath $env:GITHUB_PATH -Append -Encoding utf8
-          "C:\Strawberry\c\bin" | Out-File -FilePath $env:GITHUB_PATH -Append -Encoding utf8
-          "C:\Program Files\NASM" | Out-File -FilePath $env:GITHUB_PATH -Append -Encoding utf8
+          # Set PATH for current step AND all subsequent steps
+          $perlPaths = @("C:\Strawberry\perl\site\bin", "C:\Strawberry\perl\bin", "C:\Strawberry\c\bin")
+          $nasmPath = "C:\Program Files\NASM"
+          foreach ($p in $perlPaths + $nasmPath) {
+            $env:Path = "$p;$env:Path"
+            $p | Out-File -FilePath $env:GITHUB_PATH -Append -Encoding utf8
+          }
           perl -v | Select-Object -First 2
-          nasm -v
+          & "$nasmPath\nasm.exe" -v
 
       - name: Install protoc (Protobuf compiler)
         shell: pwsh
