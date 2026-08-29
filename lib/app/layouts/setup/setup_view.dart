@@ -13,6 +13,8 @@ import 'package:bluebubbles/app/layouts/setup/pages/rustpush/phone_number.dart';
 import 'package:bluebubbles/helpers/helpers.dart';
 import 'package:bluebubbles/app/layouts/setup/pages/setup_checks/battery_optimization.dart';
 import 'package:bluebubbles/app/layouts/setup/dialogs/failed_to_connect_dialog.dart';
+import 'package:bluebubbles/app/layouts/setup/dialogs/proxy_settings_dialog.dart';
+import 'package:bluebubbles/services/network/proxy_config.dart';
 import 'package:bluebubbles/app/layouts/setup/pages/sync/sync_settings.dart';
 import 'package:bluebubbles/app/layouts/setup/pages/sync/server_credentials.dart';
 import 'package:bluebubbles/app/layouts/setup/pages/contacts/request_contacts.dart';
@@ -983,7 +985,23 @@ class SetupHeader extends StatelessWidget {
               ),
             ],
           ),
-          PageNumber(parentController: controller),
+          Row(
+            children: [
+              // Proxy settings button (visible on all setup pages)
+              Obx(() => IconButton(
+                icon: Icon(
+                  ProxyConfigService().hasProxy ? Icons.network_cell : Icons.network_cell_outlined,
+                  size: 22,
+                  color: ProxyConfigService().hasProxy ? Colors.blue : null,
+                ),
+                tooltip: '网络代理设置',
+                onPressed: () {
+                  Get.dialog(const ProxySettingsDialog());
+                },
+              )),
+              PageNumber(parentController: controller),
+            ],
+          ),
         ],
       ),
     );

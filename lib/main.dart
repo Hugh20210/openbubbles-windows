@@ -9,6 +9,7 @@ import 'package:bluebubbles/app/components/custom/custom_error_box.dart';
 import 'package:bluebubbles/helpers/backend/startup_tasks.dart';
 import 'package:bluebubbles/helpers/helpers.dart';
 import 'package:bluebubbles/services/network/http_overrides.dart';
+import 'package:bluebubbles/services/network/proxy_config.dart';
 import 'package:bluebubbles/utils/logger/logger.dart';
 import 'package:bluebubbles/services/network/backend_service.dart';
 import 'package:bluebubbles/utils/window_effects.dart';
@@ -73,6 +74,10 @@ Future<Null> initApp(bool bubble, List<String> arguments) async {
   runZonedGuarded<Future<void>>(
     () async {
       WidgetsFlutterBinding.ensureInitialized();
+
+      // Load proxy config BEFORE any network/Rust initialization.
+      // The Rust core reads openbubbles_proxy.json on first HTTP client use.
+      await ProxyConfigService().load();
 
       await StartupTasks.initStartupServices(isBubble: bubble);
 

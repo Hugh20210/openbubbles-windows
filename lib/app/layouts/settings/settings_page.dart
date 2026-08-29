@@ -24,6 +24,8 @@ import 'package:bluebubbles/app/layouts/settings/pages/advanced/private_api_pane
 import 'package:bluebubbles/app/layouts/settings/pages/advanced/redacted_mode_panel.dart';
 import 'package:bluebubbles/app/layouts/settings/pages/server/server_management_panel.dart';
 import 'package:bluebubbles/app/layouts/settings/pages/scheduling/scheduled_messages_panel.dart';
+import 'package:bluebubbles/app/layouts/setup/dialogs/proxy_settings_dialog.dart';
+import 'package:bluebubbles/services/network/proxy_config.dart';
 import 'package:bluebubbles/app/layouts/settings/widgets/settings_widgets.dart';
 import 'package:bluebubbles/app/layouts/settings/pages/theming/theming_panel.dart';
 import 'package:bluebubbles/app/layouts/settings/pages/misc/troubleshoot_panel.dart';
@@ -284,6 +286,27 @@ class _SettingsPageState extends OptimizedState<SettingsPage> {
                                   }),
                                   if (ss.serverDetailsSync().item4 >= 205)
                                     const SettingsDivider(),
+                                  // Network Proxy settings (all platforms)
+                                  const SettingsDivider(),
+                                  SettingsTile(
+                                    backgroundColor: tileColor,
+                                    title: "Network Proxy",
+                                    subtitle: ProxyConfigService().hasProxy
+                                        ? "Proxy: ${ProxyConfigService().config.url}"
+                                        : "Not configured",
+                                    onTap: () {
+                                      showDialog(
+                                        context: context,
+                                        builder: (_) => const ProxySettingsDialog(),
+                                      );
+                                    },
+                                    trailing: const NextButton(),
+                                    leading: const SettingsLeadingIcon(
+                                      iosIcon: CupertinoIcons.network,
+                                      materialIcon: Icons.network_cell_outlined,
+                                      containerColor: Colors.blueAccent,
+                                    ),
+                                  ),
                                   if (ss.serverDetailsSync().item4 >= 205)
                                     SettingsTile(
                                       backgroundColor: tileColor,
