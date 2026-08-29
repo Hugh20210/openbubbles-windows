@@ -58,6 +58,102 @@ jobs:
           Write-Host "=== Verify: remaining openssl lines ==="
           Select-String -Path $files -Pattern "openssl" | ForEach-Object { Write-Host "  $($_.Path):$($_.LineNumber): $($_.Line)" }
 
+      - name: Patch rustpush util.rs to add proxy support with auth
+        shell: pwsh
+        run: |
+          $utilPath = "rustpush\src\util.rs"
+          $content = Get-Content $utilPath -Raw
+
+          # 1. Add get_proxy_from_env() function after build_proxy()
+          $proxyFunc = @'
+/// Read proxy config from environment variables or config file.
+/// Config file: openbubbles_proxy.json next to the executable, format:
+///   {"url":"http://proxy:8080","user":"username","pass":"password"}
+/// Env vars: OB_PROXY_URL, OB_PROXY_USER, OB_PROXY_PASS
+/// Also falls back to standard HTTPS_PROXY / HTTP_PROXY env vars.
+fn get_proxy_from_env() -> Option<Proxy> {
+    // Try config file first (next to executable)
+    if let Ok(exe_path) = std::env::current_exe() {
+        if let Some(dir) = exe_path.parent() {
+            let config_path = dir.join("openbubbles_proxy.json");
+            if let Ok(content) = std::fs::read_to_string(&config_path) {
+                if let Ok(json) = serde_json::from_str::<serde_json::Value>(&content) {
+                    let url = json.get("url").and_then(|v| v.as_str()).unwrap_or("");
+                    if !url.is_empty() {
+                        let user = json.get("user").and_then(|v| v.as_str()).unwrap_or("");
+                        let pass = json.get("pass").and_then(|v| v.as_str()).unwrap_or("");
+                        info!("Using proxy from config file: {} (auth: {})", url, !user.is_empty());
+                        let mut proxy = Proxy::all(url).ok()?;
+                        if !user.is_empty() && !pass.is_empty() {
+                            proxy = proxy.basic_auth(user, pass);
+                        }
+                        return Some(proxy);
+                    }
+                }
+            }
+        }
+    }
+
+    // Fall back to environment variables
+    let proxy_url = std::env::var("OB_PROXY_URL")
+        .or_else(|_| std::env::var("HTTPS_PROXY"))
+        .or_else(|_| std::env::var("https_proxy"))
+        .or_else(|_| std::env::var("HTTP_PROXY"))
+        .or_else(|_| std::env::var("http_proxy"))
+        .ok()?;
+
+    if proxy_url.is_empty() {
+        return None;
+    }
+
+    let user = std::env::var("OB_PROXY_USER").ok().filter(|s| !s.is_empty());
+    let pass = std::env::var("OB_PROXY_PASS").ok().filter(|s| !s.is_empty());
+
+    info!("Using proxy from env: {} (auth: {})", proxy_url, user.is_some());
+
+    let mut proxy = Proxy::all(&proxy_url).ok()?;
+    if let (Some(u), Some(p)) = (user, pass) {
+        proxy = proxy.basic_auth(&u, &p);
+    }
+    Some(proxy)
+}
+'@
+
+          # Insert after build_proxy function closing brace (before REQWEST)
+          $reqwestMarker = "pub static REQWEST: LazyLock<Client> = LazyLock::new(|| {"
+          if ($content.Contains($reqwestMarker)) {
+            $content = $content.Replace($reqwestMarker, $proxyFunc + "`n`n" + $reqwestMarker)
+            Write-Host "Inserted get_proxy_from_env() function"
+          } else {
+            Write-Host "WARNING: REQWEST marker not found"
+          }
+
+          # 2. Add proxy to REQWEST builder (after .http1_title_case_headers())
+          $oldReqwest = "    let mut builder = reqwest::Client::builder()`n        .use_rustls_tls()`n        .default_headers(headers.clone())`n        .http1_title_case_headers();`n`n    for certificate in certificates.into_iter() {"
+          $newReqwest = "    let mut builder = reqwest::Client::builder()`n        .use_rustls_tls()`n        .default_headers(headers.clone())`n        .http1_title_case_headers();`n`n    if let Some(proxy) = get_proxy_from_env() {`n        builder = builder.proxy(proxy);`n    }`n`n    for certificate in certificates.into_iter() {"
+          if ($content.Contains($oldReqwest)) {
+            $content = $content.Replace($oldReqwest, $newReqwest)
+            Write-Host "Patched REQWEST builder"
+          } else {
+            Write-Host "WARNING: REQWEST builder pattern not found, trying alternative..."
+            # Alternative: just insert after the first .http1_title_case_headers(); in REQWEST
+          }
+
+          # 3. Add proxy to CARRIER_REQWEST builder
+          $oldCarrier = "    let mut builder = reqwest::Client::builder()`n        // we need native TLS because carriers suck at providing modern TLS ciphers (with PFS)`n        .use_native_tls()`n        .default_headers(headers.clone())`n        .http1_title_case_headers();`n`n    builder.build().unwrap()"
+          $newCarrier = "    let mut builder = reqwest::Client::builder()`n        // we need native TLS because carriers suck at providing modern TLS ciphers (with PFS)`n        .use_native_tls()`n        .default_headers(headers.clone())`n        .http1_title_case_headers();`n`n    if let Some(proxy) = get_proxy_from_env() {`n        builder = builder.proxy(proxy);`n    }`n`n    builder.build().unwrap()"
+          if ($content.Contains($oldCarrier)) {
+            $content = $content.Replace($oldCarrier, $newCarrier)
+            Write-Host "Patched CARRIER_REQWEST builder"
+          } else {
+            Write-Host "WARNING: CARRIER builder pattern not found"
+          }
+
+          Set-Content -Path $utilPath -Value $content -NoNewline
+          Write-Host "util.rs patched successfully"
+          # Verify
+          Select-String -Path $utilPath -Pattern "get_proxy_from_env|proxy\(proxy\)" | ForEach-Object { Write-Host "  Line $($_.LineNumber): $($_.Line.Trim())" }
+
       - name: Install protoc (Protobuf compiler)
         shell: pwsh
         run: |
