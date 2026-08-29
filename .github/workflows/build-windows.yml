@@ -22,15 +22,17 @@ jobs:
       - name: Set up Rust (stable)
         uses: dtolnay/rust-toolchain@stable
 
-      - name: Install Strawberry Perl (for OpenSSL vendored build)
+      - name: Install Strawberry Perl + NASM (for OpenSSL vendored build)
         shell: pwsh
         run: |
-          choco install strawberryperl -y --no-progress
-          # Make perl available to ALL subsequent steps
+          choco install strawberryperl nasm -y --no-progress
+          # Make perl and nasm available to ALL subsequent steps
           "C:\Strawberry\perl\site\bin" | Out-File -FilePath $env:GITHUB_PATH -Append -Encoding utf8
           "C:\Strawberry\perl\bin" | Out-File -FilePath $env:GITHUB_PATH -Append -Encoding utf8
           "C:\Strawberry\c\bin" | Out-File -FilePath $env:GITHUB_PATH -Append -Encoding utf8
+          "C:\Program Files\NASM" | Out-File -FilePath $env:GITHUB_PATH -Append -Encoding utf8
           perl -v | Select-Object -First 2
+          nasm -v
 
       - name: Install protoc (Protobuf compiler)
         shell: pwsh
@@ -95,9 +97,10 @@ jobs:
       - name: Build Windows Release (portable)
         shell: cmd
         run: |
-          set PATH=C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Strawberry\c\bin;%PATH%
+          set PATH=C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Strawberry\c\bin;C:\Program Files\NASM;%PATH%
           call "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\Tools\VsDevCmd.bat" -arch=amd64
           where perl
+          where nasm
           flutter build windows --release
         env:
           RUST_BACKTRACE: 1
